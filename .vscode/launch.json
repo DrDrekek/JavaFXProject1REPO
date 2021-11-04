@@ -8,6 +8,14 @@
             "type": "java",
             "name": "Launch Main",
             "request": "launch",
+            "vmArgs": "--module-path C:/Content/Openjfx/javafx-sdk-17.0.1/lib --add-modules javafx.controls,javafx.fxml",
+            "mainClass": "ExerciseA.Main",
+            "projectName": "JavaFXProject1REPO_3f09a658"
+        },
+        {
+            "type": "java",
+            "name": "Launch Main",
+            "request": "launch",
             "vmArgs": "--module-path D:/study_material/JAVA/New_folder/javafx-sdk-17.0.1/lib --add-modules javafx.controls,javafx.fxml",
             "mainClass": "ExerciseA.Main",
             "projectName": "JavaFXProject1REPO_c57d281c"
