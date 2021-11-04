@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Slider?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<GridPane alignment="center" hgap="10" vgap="10" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ExerciseA.Controller">
+   <columnConstraints>
+      <ColumnConstraints />
+   </columnConstraints>
+   <rowConstraints>
+      <RowConstraints />
+   </rowConstraints>
+   <children>
+      <AnchorPane prefHeight="554.0" prefWidth="906.0">
+         <children>
+            <Button layoutX="767.0" layoutY="314.0" mnemonicParsing="false" onAction="#btnClear" text="Clear" />
+            <Button layoutX="686.0" layoutY="314.0" mnemonicParsing="false" onAction="#btnDraw" text="Draw" />
+            <Slider fx:id="slider_1" layoutX="602.0" layoutY="259.0" prefHeight="20.0" prefWidth="266.0" />
+            <TextField layoutX="499.0" layoutY="181.0" fx:id="x" />
+            <TextField fx:id="y" layoutX="698.0" layoutY="181.0" />
+            <Text layoutX="480.0" layoutY="201.0" strokeType="OUTSIDE" strokeWidth="0.0" text="X:" />
+            <Text layoutX="680.0" layoutY="201.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Y:" />
+            <Text layoutX="586.0" layoutY="146.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Coordinates" wrappingWidth="133.6279296875">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Text>
+            <Text layoutX="615.0" layoutY="399.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Background Color:" />
+            <Text layoutX="516.0" layoutY="275.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Radius:" />
+            <Text layoutX="611.0" layoutY="295.0" strokeType="OUTSIDE" strokeWidth="0.0" text="0" />
+            <Text layoutX="683.0" layoutY="295.0" strokeType="OUTSIDE" strokeWidth="0.0" text="50" />
+            <Text layoutX="767.0" layoutY="295.0" strokeType="OUTSIDE" strokeWidth="0.0" text="100" />
+            <Text layoutX="847.0" layoutY="294.0" strokeType="OUTSIDE" strokeWidth="0.0" text="150" />
+            <ComboBox fx:id="combo_box" layoutX="736.0" layoutY="378.0" prefHeight="30.0" prefWidth="134.0" promptText="Select color" />
+            <Pane fx:id="pane_code" layoutX="2.0" layoutY="8.0" onMouseClicked="#mouseClick" prefHeight="544.0" prefWidth="464.0" />
+         </children>
+      </AnchorPane>
+   </children>
+</GridPane>
